@@ -1,0 +1,79 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.mentBtn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu items (default hidden in small screens) */
+.menuitems {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.menuitems li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 23px;
+  transition: color 0.2s ease-in-out;
+}
+
+.menuitems li a:hover {
+  color: #9000ff;
+}
+
+
+/* ✅ Mobile View: Only for screens up to 600px */
+@media (max-width: 600px) {
+  .mentBtn {
+    display: block;
+  }
+
+  .menuitems {
+    position: absolute;
+    top: 70px;
+    right: 24px;
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menuitems.menuOpen {
+    display: flex;
+  }
+}

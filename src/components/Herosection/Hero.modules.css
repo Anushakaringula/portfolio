@@ -1,0 +1,196 @@
+@import "../../vars.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hero{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    z-index: 1;
+    margin: 0px 8%;
+    padding: 40px 0;
+    margin-top: 100px;
+    font-family: var(--font-outfit);
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: center;
+   gap: 5px;
+}
+.title1{
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: px;
+    font-family: var(--font-outfit);
+   /* background: linear-gradient(90deg,rgba(255,255,255,1) 70%,
+    rgba(255,255,255,0) 120%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;*/
+    color:rgba(8, 15, 157, 0.849);
+}
+.title1 span{
+    color: rgb(253, 165, 1);
+    z-index: 1000;
+}
+.description{
+    font-family: var(--font-outfit);
+    font-size: 30px;
+    margin-bottom:10px;
+}
+.contactbtn{
+    text-decoration: none;
+    background-color: rgba(54, 56, 199, 0.955);
+    color: var(--color-text);
+    border-radius: 100px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 12px 21px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0 ,0.25);
+}
+.contactbtn:hover{
+     background-color: rgb(28, 31, 202);
+}
+.profilepic{
+    width: 40%;
+    z-index: 1;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 20px;
+
+}
+
+@keyframes floating{
+    0%{
+        transform:translateY(0);
+
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0,-0px);
+    }
+}
+/*.topblur{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    min-width: 350px;
+    top: -120px;
+    left: 30vw;
+    border-radius: 764px;
+    background:rgb(120, 72, 161);
+    filter: blur(100px);
+    z-index: 0;
+}
+.bottomblur{
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+    min-width: 250px;
+    top: -2468px;
+    right: -20vw;
+    left: 25vw;
+    border-radius: 764px;
+    background:rgb(95, 13, 166) ;
+    filter: blur(100px);
+    z-index: 0;
+}*/
+@media screen and (max-width:500px)
+{
+    .hero{
+        flex-direction: column-reverse;
+        margin: 30px 5%;
+        gap: 20px;
+    } 
+    .left{
+        align-items: center;
+    } 
+    .title1 {
+        font-size: 42px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .description {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contactbtn {
+        font-size: 20px;
+        padding: 12px 20px;
+        margin-top: 5px;
+    }
+    .profilepic {
+        width: 70%;
+    }
+
+    .topblur, .bottomblur {
+        display: none; 
+    }
+    .typing-role {
+    font-size: 1.1rem;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .cursor {
+    font-size: 1.2rem;
+  }
+}
+
+.typing-role {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 20px;
+  white-space: nowrap;       /* Prevent line break */
+  display: flex;
+  align-items: center;
+}
+
+.typing-inline {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.typed-text {
+  display: inline;
+  white-space: nowrap;
+  margin-left: 8px;
+  color: rgba(197, 130, 7, 0.925);
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: bold;
+  font-size: inherit;
+  color: rgba(197, 130, 7, 0.925);
+  animation: blink 1s infinite;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

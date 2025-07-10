@@ -1,0 +1,167 @@
+@import "../../vars.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* About.css */
+
+.about {
+  padding: 40px 10%;
+  background-color: #f9f9f9;
+  color: #333;
+  position: relative;
+}
+
+/* Top Header Section */
+.head {
+    display: flex;
+    gap: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutpic {
+  width: 30px;
+  height: auto;
+  
+}
+
+.abt {
+  font-size: 38px;
+  font-weight: 700;
+  color: #222;
+}
+
+.me {
+  color: #540796;
+}
+
+/* Mid Section: Split Layout */
+.mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* Left Side Image */
+.side1 {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side Text Content */
+.side2 {
+ flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+
+  /* Flexbox layout for vertical stacking */
+  display: flex;
+  flex-direction: column;
+
+  /* Align all children (headings, paragraphs, button) to the left */
+  align-items: flex-start;
+
+  text-align: left;
+}
+
+.side2 h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.side2 h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #540796;
+}
+
+.info {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.spam {
+  font-size: 16px;
+  color: #444;
+  margin: 8px 0;
+}
+
+.spam span {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Resume Button */
+.resume {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #540796;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.resume:hover {
+  background-color: #3e066e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .side1 {
+    width: 80%;
+    margin-top: 30px;
+    align-items: left;
+  }
+  .side2
+  {
+    font-size: 18px;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .side2 h1 {
+    font-size: 28px;
+  }
+
+  .side2 h3 {
+    font-size: 18px;
+  }
+
+  .info {
+    font-size: 17px;
+  }
+  .abt,.me{
+    font-size: 30px;
+  }
+  .aboutpic{
+    width: 30px;
+    height: auto;
+  }
+}
