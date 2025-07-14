@@ -61,6 +61,7 @@ body, html {
     font-weight: 600;
     padding: 12px 21px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0 ,0.25);
+    margin-top: 30px;
 }
 .contactbtn:hover{
      background-color: rgb(28, 31, 202);
@@ -137,7 +138,7 @@ body, html {
     .contactbtn {
         font-size: 20px;
         padding: 12px 20px;
-        margin-top: 5px;
+        margin-top: 6px;
     }
     .profilepic {
         width: 70%;
@@ -161,8 +162,8 @@ body, html {
 .typing-role {
   font-size: 1.8rem;
   font-weight: 600;
-  margin-top: 20px;
-  white-space: nowrap;       /* Prevent line break */
+  margin-top: 12px;
+  white-space: nowrap;       
   display: flex;
   align-items: center;
 }

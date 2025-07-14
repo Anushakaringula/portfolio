@@ -36,7 +36,7 @@ const About = () => {
           <p className='spam'><span>Email: </span>karingulaanushareddy27@gmail.com</p>
           <p className='spam'><span>Place: </span>Siddipet, Telangana</p>
           <a
-            href="/assets/Karingula Anusha Resume.pdf"
+            href="/assets/Karingula Anusha resume.pdf"
             className='resume'
             target="_blank"
             rel="noopener noreferrer"
