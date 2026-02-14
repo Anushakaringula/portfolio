@@ -33,10 +33,10 @@ const About = () => {
           <h3>Frontend Developer</h3>
           <p className='info'>
            I am a passionate undergraduate from RGUKT Basar, pursuing a B.Tech in Computer Science and Engineering. I enjoy blending creativity with technology to craft engaging digital experiences. My interests lie in UI/UX design, full-stack development, and AI/ML. I’ve worked on responsive web applications and intuitive user interfaces using technologies like Java, PHP, MySQL, HTML, CSS, JavaScript, and design tools like Figma.          </p>
-          <p className='spam'><span>Email: </span>karingulaanushareddy27@gmail.com</p>
+          <p className='spam'><span>Email: </span>karingulaanushareddy@gmail.com</p>
           <p className='spam'><span>Place: </span>Siddipet, Telangana</p>
           <a
-            href="/assets/Karingula Anusha resume.pdf"
+            href="/assets/Resume_.pdf"
             className='resume'
             target="_blank"
             rel="noopener noreferrer"

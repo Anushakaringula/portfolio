@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
         
         
-          <a href="mailto:karingulaanushareddy27@gmail.com" className='contactbtn'>Contact Me</a>
+          <a href="mailto:karingulaanushareddy@gmail.com" className='contactbtn'>Contact Me</a>
         </div>
         <img src="/assets/profile.png" alt="profilepic" className='profilepic'></img>
         <div className='topblur'></div>

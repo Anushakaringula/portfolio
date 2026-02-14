@@ -22,11 +22,12 @@ const Skills = () => {
           { src: 'php.png', label: 'PHP' },
           { src: 'html.png', label: 'Html' },
           { src: 'css.png', label: 'Css' },
-          { src: 'js.png', label: 'Java Script' },
+          { src: 'js.png', label: 'JavaScript' },
           { src: 'java.png', label: 'Java' },
           { src: 'mysql.png', label: 'MySQL' },
           { src: 'letter-c.png', label: 'C' },
           { src: 'github.png', label: 'Git Hub', extraClass: 'git' },
+          { src: 'springboot.png', label: 'Springboot',id:'boot'},
         ].map((skill, index) => (
           <div className='set1' key={index} data-aos="zoom-in">
             <img
